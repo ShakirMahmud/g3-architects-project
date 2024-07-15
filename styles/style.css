@@ -150,12 +150,14 @@ main>section {
     font-family: Work Sans;
     font-size: 1rem;
     font-weight: 400;
-    width: 540px;
+    max-width: 540px;
+    margin-bottom: 100px;
 }
 
 .facts_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-left: 50px;
 }
 
 .fact {
@@ -194,12 +196,17 @@ main>section {
         flex-direction: column;
     }
 
-    .team_img_container {
+    .team_img_container, .facts_container {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .our_features {
         margin-left: 20px;
+    }
+    .facts_container{
+        justify-items: center;
+        gap: 24px;
+        margin-left: 0;
     }
 }
 
