@@ -8,28 +8,33 @@ body {
 .display_flex {
     display: flex;
 }
-.text_center{
+
+.text_center {
     text-align: center;
 }
+
 .bg_light {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.btn_explore{
-width: 180px;
-height: 64px;
-border-radius: 8px;
-border: none;
-background: rgb(255, 144, 14);
-color: rgb(255, 255, 255);
-font-family: Work Sans;
-font-size: 1.25rem;
-font-weight: 600;
+
+.btn_explore {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
-main{
+
+main {
     max-width: 1440px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 130px;
 }
 
@@ -38,86 +43,173 @@ main > section{
     justify-content: space-between;
     align-items: center;
 }
+
 .brand {
     color: rgb(19, 19, 19);
     font-size: 2.8125rem;
     font-weight: 700;
 }
-.nav_links {
 
-}
+.nav_links {}
+
 .nav_item {
     list-style: none;
     margin-right: 26px;
 }
+
 .nav_link {
     text-decoration: none;
     color: rgb(66, 66, 66);
     font-size: 1.125rem;
     font-weight: 500;
 }
+
 .navbar,
 .banner {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* banner styles */
-.banner_content{
+.banner_content {
     max-width: 862px;
     height: auto;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner_title{
+
+.banner_title {
     color: rgb(19, 19, 19);
-font-size: 4rem;
-font-weight: 700;
+    font-size: 4rem;
+    font-weight: 700;
 }
-.banner_para{
+
+.banner_para {
     color: rgb(114, 114, 114);
-font-family: Work Sans;
-font-size: 1rem;
-font-weight: 400;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
 }
-.banner_img{
+
+.banner_img {
     width: 100%;
 }
+
 /* team styles */
-.teams{
+.teams {
     align-items: center;
 }
-.team_img_container{
+
+.team_img_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our_features{
+
+.our_features {
     margin-left: 73px;
     max-width: 468px;
 }
-#quick_list{
-    color:  rgb(114, 114, 114);
+
+#quick_list {
+    color: rgb(114, 114, 114);
     font-weight: 500;
     font-size: 2.8125rem;
 }
-#of_Our{
-    color:  rgb(19, 19, 19);
+
+#of_Our {
+    color: rgb(19, 19, 19);
     font-weight: 700;
     font-size: 2.8125rem;
 }
-#Features{
-    color:  rgb(255, 144, 14);
+
+#Features {
+    color: rgb(255, 144, 14);
     font-weight: 700;
     font-size: 2.8125rem;
 }
-.feature_description{
+
+.feature_description {
     color: rgb(114, 114, 114);
-font-size: 1rem;
-font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400;
 }
+
+/* fact section styles here  */
+
+.fact_title {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.8125rem;
+    font-weight: 700;
+}
+
+.fact_para {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 540px;
+}
+
+.facts_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fact {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 241.83px;
+    height: 241.83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fact_number {
+    color: rgb(66, 66, 66);
+    font-size: 2.8125rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact_name {
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+    /* margin-bottom: 60px; */
+}
+
+/* small size device */
 @media screen and (max-width:576px) {
-    .navbar, .nav_links{
+
+    .navbar,
+    .nav_links,
+    .teams {
         flex-direction: column;
+    }
+
+    .team_img_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our_features {
+        margin-left: 20px;
+    }
+}
+
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams {
+        flex-direction: column;
+    }
+
+    .our_features {
+        margin: 35px auto;
     }
 }
